@@ -1,0 +1,32 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Skill Swap</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>My Skill Swap Profile</h2>
+
+  <input type="text" id="name" placeholder="Your Name"><br>
+  <input type="text" id="location" placeholder="Your Location (optional)"><br>
+
+  <input type="text" id="skillsOffered" placeholder="Skills You Offer (comma-separated)"><br>
+  <input type="text" id="skillsWanted" placeholder="Skills You Want (comma-separated)"><br>
+
+  <select id="availability">
+    <option value="Anytime">Anytime</option>
+    <option value="Weekends">Weekends</option>
+    <option value="Evenings">Evenings</option>
+  </select><br>
+
+  <label>
+    <input type="checkbox" id="publicProfile"> Make my profile public
+  </label><br><br>
+
+  <button onclick="saveProfile()">Save Profile</button>
+
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>
